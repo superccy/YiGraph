@@ -1,0 +1,49 @@
+# =============================================================================
+# AAG (Analysis-Augmented Graph) Engine Configuration
+# =============================================================================
+
+version: 1.0   # Config version
+
+# -----------------------------------------------------------------------------
+# Reasoner - LLM inference
+# -----------------------------------------------------------------------------
+reasoner:
+  llm:
+    # LLM provider: ollama (local) or openai (OpenAI-compatible API, e.g. DeepSeek)
+    provider: "openai"
+    # Ollama config (used when provider is ollama)
+    ollama:
+      model_name: "llama3.1:70b"
+      device: "cuda:0"
+      timeout: 150000
+      port: 11434
+    # OpenAI-compatible API (used when provider is openai; e.g. OpenAI / DeepSeek / self-hosted)
+    openai:
+      base_url: "https://your-api-endpoint.com/v1/"   # OpenAI-compatible API base URL; must end with /
+      api_key: "your-api-key-here"                    # API key from your provider
+      model: "gpt-4o-mini"                            # Model name (e.g. gpt-4o-mini, deepseek-chat)
+
+
+# -----------------------------------------------------------------------------
+# Retrieval - Vector DB and graph DB
+# -----------------------------------------------------------------------------
+retrieval:
+  database:
+    # Vector DB (Milvus) for RAG text retrieval; requires a running Milvus instance (e.g. Docker)
+    vector:
+      host: "localhost"
+      port: 19530
+    # Neo4j for graph queries (e.g. Cypher in interactive mode)
+    neo4j:
+      enabled: true
+      uri: "bolt://202.199.13.237:7687"
+      user: "neo4j"
+      password: "12345678"
+
+  # Embedding model for RAG and vector retrieval
+  embedding:
+    model_name: "BAAI/bge-large-en-v1.5"
+    batch_size: 20
+    chunk_size: 512
+    chunk_overlap: 20
+    device: "cuda:2"

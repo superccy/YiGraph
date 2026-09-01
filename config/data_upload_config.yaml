@@ -1,0 +1,28 @@
+# User upload / data loading config (used by dataload_main)
+# Paths are relative to repo root (run dataload_main from GraphLLM/); use absolute paths if needed.
+datasets:
+  - name: AMLSim1K
+    type: graph   # graph / text
+    description: "AMLSim 1K synthetic transaction graph."
+    schema:
+      # Vertex (node) layer
+      vertex:
+        - type: account
+          path: "aag/datasets/graphs/transaction_amlsim/1K/accounts.csv"
+          format: csv  # yaml / json / csv / gml
+          id_field: acct_id              # Unique node ID field
+          label_field: prior_sar_count  # Node label (optional)
+      # Edge layer
+      edge:
+        - type: transfer
+          path: "aag/datasets/graphs/transaction_amlsim/1K/transactions.csv"
+          format: csv  # yaml / json / csv / gml
+          source_field: orig_acct
+          target_field: bene_acct
+          label_field: is_sar
+      # Graph-level metadata
+      graph:
+        directed: true
+        multigraph: true
+        weighted: false
+        heterogeneous: false

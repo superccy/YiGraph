@@ -1,0 +1,26 @@
+{
+  "config_path": "/home/hdd3/wangzh/projects/YiGraph-dev/config/engine_config.yaml",
+  "dataset_path": "/home/hdd3/wangzh/projects/YiGraph-dev/experiment/evaluate-alogrithm-selection/dataset/dataset1.json",
+  "filter_correct": "all",
+  "dataset_stats": {
+    "original_total": 256,
+    "with_correct_field": 0,
+    "correct_true": 0,
+    "correct_false": 0
+  },
+  "summary": {
+    "total_samples": 0,
+    "task_type_correct": 0,
+    "task_type_accuracy": 0.0,
+    "algorithm_correct": 0,
+    "algorithm_accuracy": 0.0,
+    "failed_samples": 0,
+    "token_usage": {
+      "requests": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  "results": []
+}

@@ -1,0 +1,2050 @@
+[
+  {
+    "id": 1,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users lie on the largest number of shortest routes between other pairs of users, for identifying brokerage positions, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 2,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users lie on the largest number of shortest routes between other pairs of users, for spotting bridge-like intermediaries, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 3,
+    "algorithm": "floyd_warshall",
+    "task_type": "Path",
+    "question": "In this transportation network, what are the shortest-path distances between every pair of locations, across the entire network, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 4,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this transportation network, which locations lie on the largest number of shortest routes between other pairs of locations, for identifying brokerage positions, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 5,
+    "algorithm": "closeness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users have the smallest average shortest-path distance to all other reachable users, for rapid network-wide reach, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 6,
+    "algorithm": "katz_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are most important when both direct links and longer indirect walks contribute, with longer walks discounted, when both direct and multi-step influence matter, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 7,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, based purely on immediate neighbors, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 8,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, judging only by direct ties, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 9,
+    "algorithm": "bridge_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this social network, which connections belong to components that would be separated by removing bridge connections?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 10,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 11,
+    "algorithm": "articulation_points",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, which locations are single points of failure whose removal would increase the number of disconnected parts, if removed individually, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 12,
+    "algorithm": "floyd_warshall",
+    "task_type": "Path",
+    "question": "In this transportation network, what are the shortest-path distances between every pair of locations, for network-wide routing analysis, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 13,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when importance is boosted by links from already important nodes, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 14,
+    "algorithm": "eigenvector_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are most central because they are connected to other highly central users?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 15,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, between a specified source and target, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 16,
+    "algorithm": "closeness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users have the smallest average shortest-path distance to all other reachable users, for fast access to the rest of the network, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 17,
+    "algorithm": "in_degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users receive incoming links from the largest number of distinct users, based on how many incoming links they receive, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 18,
+    "algorithm": "in_degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users receive incoming links from the largest number of distinct users, counting only incoming attention or follows, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 19,
+    "algorithm": "katz_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are most important when both direct links and longer indirect walks contribute, with longer walks discounted, when indirect reach should still count, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 20,
+    "algorithm": "katz_centrality",
+    "task_type": "Centrality",
+    "question": "In this transaction network, which accounts are most important when both direct links and longer indirect walks contribute, with longer walks discounted?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 21,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users lie on the largest number of shortest routes between other pairs of users, for finding key transit intermediaries, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 22,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this transportation network, which locations lie on the largest number of shortest routes between other pairs of locations, for spotting bridge-like intermediaries, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 23,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, subject to edge capacities, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 24,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, from their one-hop connections alone, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 25,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, when only direct reach is considered, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 26,
+    "algorithm": "out_degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this directed transaction network, which accounts send outgoing links to the largest number of distinct accounts?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 27,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, based on how often their neighbors also connect to one another, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 28,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 29,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, through the density of triangles around them, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 30,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 31,
+    "algorithm": "find_cliques",
+    "task_type": "Cliques & Cores",
+    "question": "In this biological interaction network, what are all maximal fully connected groups of proteins?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 32,
+    "algorithm": "k_clique_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what overlapping communities can be formed by chaining together adjacent cliques of size k, allowing overlaps through shared fully connected k-node groups, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 33,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 34,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 35,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when influence flows recursively through prestigious neighbors, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 36,
+    "algorithm": "k_clique_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this biological interaction network, what overlapping communities can be formed by chaining together adjacent cliques of size k?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 37,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what is the average local triangle-closure level across all users, at the network level, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 38,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what is the average local triangle-closure level across all users, across the graph as a whole, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 39,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, what is the average local triangle-closure level across all users, at the network level, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 40,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, judging local cohesiveness among their immediate neighbors, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 41,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, based purely on immediate neighbors, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 42,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this biological interaction network, for each protein, how strongly are its neighbors connected to one another through closed triads?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 43,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, from the tendency of their contacts to form closed triads, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 44,
+    "algorithm": "square_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, which users participate most strongly in four-node cycle patterns among their neighbors?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 45,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what is the average local triangle-closure level across all users, for the entire network overall, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 46,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, giving extra weight to rare shared neighbors, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 47,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, giving extra weight to rare shared neighbors, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 48,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, what is the average local triangle-closure level across all users, across the graph as a whole, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 49,
+    "algorithm": "bridge_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this biological interaction network, which interactions belong to components that would be separated by removing bridge interactions?",
+    "domain": "Medicine",
+    "role": "Epidemiologist (Modeling Specialist)"
+  },
+  {
+    "id": 50,
+    "algorithm": "triangles",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how many three-node closed loops does each user participate in, counting closed three-user interaction loops, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 51,
+    "algorithm": "triangles",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how many three-node closed loops does each user participate in, by the number of mutual three-node closures they belong to, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 52,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, for each user, how strongly are its neighbors connected to one another through closed triads?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 53,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 54,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 55,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 56,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 56?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 57,
+    "algorithm": "is_partition",
+    "task_type": "Clustering & Community",
+    "question": "Do the proposed communities in this social network form a valid partition that is disjoint and covers every user exactly once, checking that groups are disjoint and exhaustive, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 58,
+    "algorithm": "is_partition",
+    "task_type": "Clustering & Community",
+    "question": "Do the proposed communities in this social network form a valid partition that is disjoint and covers every user exactly once, verifying non-overlap and full coverage, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 59,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective, case 59?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 60,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for engagement and audience dynamics, case 60?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 61,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 62,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 63,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, from a structural network perspective, case 63?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 64,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 64?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 65,
+    "algorithm": "leiden_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this biological interaction network, how should the proteins be partitioned into well-connected communities while favoring dense internal connectivity and preventing badly connected communities?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 66,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective, case 66?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 67,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for engagement and audience dynamics, case 67?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 68,
+    "algorithm": "partition_quality",
+    "task_type": "Clustering & Community",
+    "question": "Given a proposed partition of this social network, how good is it in terms of intra-community versus inter-community connectivity, using coverage and performance of the partition, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 69,
+    "algorithm": "modularity",
+    "task_type": "Clustering & Community",
+    "question": "Given a proposed partition of this social network, what score measures how much denser the within-group edges are than would be expected at random?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 70,
+    "algorithm": "partition_quality",
+    "task_type": "Clustering & Community",
+    "question": "Given a proposed partition of this social network, how good is it in terms of intra-community versus inter-community connectivity, with partition-level quality statistics rather than a single modularity score, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 71,
+    "algorithm": "partition_quality",
+    "task_type": "Clustering & Community",
+    "question": "Given a proposed partition of this social network, how good is it in terms of intra-community versus inter-community connectivity, by assessing how well the partition respects existing edges and non-edges, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 72,
+    "algorithm": "articulation_points",
+    "task_type": "Connectivity & Components",
+    "question": "In this social network, which users are single points of failure whose removal would increase the number of disconnected parts?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 73,
+    "algorithm": "articulation_points",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, which locations are single points of failure whose removal would increase the number of disconnected parts, under single-location failure, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 74,
+    "algorithm": "articulation_points",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, which locations are single points of failure whose removal would increase the number of disconnected parts, when testing one-node shutdowns, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 75,
+    "algorithm": "articulation_points",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, which locations are single points of failure whose removal would increase the number of disconnected parts, if one critical node disappears, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 76,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, from a structural network perspective, case 76?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 77,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 77?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 78,
+    "algorithm": "connected_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this undirected transportation network, what are the disconnected components of mutually reachable locations, as disconnected reachability regions, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 79,
+    "algorithm": "connected_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this undirected transportation network, what are the disconnected components of mutually reachable locations, as maximal mutually reachable pieces, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 80,
+    "algorithm": "minimum_edge_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of routes whose removal would disconnect the graph or separate a specified source and target, using the fewest edges whose removal disconnects the graph, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 81,
+    "algorithm": "minimum_edge_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of routes whose removal would disconnect the graph or separate a specified source and target, through the smallest edge set that breaks connectivity, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 82,
+    "algorithm": "node_connectivity",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the minimum number of locations that must be removed to disconnect the graph or separate two parts, as the minimum number of nodes whose removal disconnects the graph, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 83,
+    "algorithm": "node_connectivity",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the minimum number of locations that must be removed to disconnect the graph or separate two parts, through the smallest count of node failures needed to break connectivity, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 84,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective, case 84?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 85,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for engagement and audience dynamics, case 85?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 86,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, from a structural network perspective, case 86?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 87,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 87?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 88,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective, case 88?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 89,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for engagement and audience dynamics, case 89?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 90,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, from a structural network perspective, case 90?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 91,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when endorsements from influential accounts matter most, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 92,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 93,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, based on how often their neighbors also connect to one another, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 94,
+    "algorithm": "girvan_newman",
+    "task_type": "Clustering & Community",
+    "question": "In this biological interaction network, what community structure appears if we repeatedly remove the interactions with highest edge betweenness to split the network?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 95,
+    "algorithm": "clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, for each user, how strongly are its neighbors connected to one another through closed triads, through the density of triangles around them, from a structural network perspective, case 95?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 96,
+    "algorithm": "find_cycle",
+    "task_type": "Path",
+    "question": "In this biological interaction network, can we find an explicit cycle, that is, a closed walk returning to its starting protein?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 97,
+    "algorithm": "katz_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are most important when both direct links and longer indirect walks contribute, with longer walks discounted, when long-range influence is discounted but not ignored, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 98,
+    "algorithm": "dag_longest_path",
+    "task_type": "Path",
+    "question": "In this directed acyclic transaction network, what is the longest path from upstream to downstream under the edge weights or durations?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 99,
+    "algorithm": "in_degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users receive incoming links from the largest number of distinct users, by the number of others pointing to them, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 100,
+    "algorithm": "in_degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users receive incoming links from the largest number of distinct users, from inbound connections alone, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 101,
+    "algorithm": "closeness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users have the smallest average shortest-path distance to all other reachable users, for broad reach with minimal path length, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 102,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, judging only by direct ties, for engagement and audience dynamics, case 102?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 103,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this transportation network, which locations lie on the largest number of shortest routes between other pairs of locations, for finding key transit intermediaries, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 104,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, between a specified source and target, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 105,
+    "algorithm": "betweenness_centrality",
+    "task_type": "Centrality",
+    "question": "In this biological interaction network, which proteins lie on the largest number of shortest routes between other pairs of proteins?",
+    "domain": "Medicine",
+    "role": "Epidemiologist (Modeling Specialist)"
+  },
+  {
+    "id": 106,
+    "algorithm": "diameter",
+    "task_type": "Distance & Measures",
+    "question": "In this social network, what is the greatest shortest-path distance between any pair of reachable users?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 107,
+    "algorithm": "diameter",
+    "task_type": "Distance & Measures",
+    "question": "In this transportation network, what is the greatest shortest-path distance between any pair of reachable locations, over all reachable node pairs, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 108,
+    "algorithm": "diameter",
+    "task_type": "Distance & Measures",
+    "question": "In this transportation network, what is the greatest shortest-path distance between any pair of reachable locations, for the farthest shortest-path distance in the graph, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 109,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, from their one-hop connections alone, from a structural network perspective, case 109?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 110,
+    "algorithm": "periphery",
+    "task_type": "Distance & Measures",
+    "question": "In this social network, which users have eccentricity equal to the network’s maximum eccentricity and therefore sit on the outermost edge of the network, as the nodes attaining the graph's maximum eccentricity, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 111,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, from one chosen source with weighted route costs, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 112,
+    "algorithm": "periphery",
+    "task_type": "Distance & Measures",
+    "question": "In this social network, which users have eccentricity equal to the network’s maximum eccentricity and therefore sit on the outermost edge of the network, among the most distant edge-of-network nodes, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 113,
+    "algorithm": "closeness_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users have the smallest average shortest-path distance to all other reachable users, for efficient diffusion across the network, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 114,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, for one chosen pair of nodes, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 115,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, for a particular origin-destination pair, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 116,
+    "algorithm": "radius",
+    "task_type": "Distance & Measures",
+    "question": "In this transportation network, what is the minimum eccentricity over all locations, that is, the smallest worst-case distance from one location to all others?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 117,
+    "algorithm": "eulerian_circuit",
+    "task_type": "Path",
+    "question": "In this social network, is there a closed route that uses every connection exactly once and returns to the starting user, and if so what is that route?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 118,
+    "algorithm": "eulerian_circuit",
+    "task_type": "Path",
+    "question": "In this transportation network, is there a closed route that uses every road segment exactly once and returns to the starting location, and if so what is that route, while traversing every edge exactly once and returning to the start, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 119,
+    "algorithm": "eulerian_circuit",
+    "task_type": "Path",
+    "question": "In this transportation network, is there a closed route that uses every road segment exactly once and returns to the starting location, and if so what is that route, under an edge-covering closed tour, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 120,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transaction network, what is the maximum flow that can be sent from a specified source account to a specified target account?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 121,
+    "algorithm": "eulerian_path",
+    "task_type": "Path",
+    "question": "In this social network, is there an open route that uses every connection exactly once, and if so what is that route?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 122,
+    "algorithm": "eulerian_path",
+    "task_type": "Path",
+    "question": "In this transportation network, is there an open route that uses every road segment exactly once, and if so what is that route, while traversing every edge exactly once without requiring a return to the start, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 123,
+    "algorithm": "eulerian_path",
+    "task_type": "Path",
+    "question": "In this transportation network, is there an open route that uses every road segment exactly once, and if so what is that route, under an edge-covering open trail, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 124,
+    "algorithm": "is_eulerian",
+    "task_type": "Path",
+    "question": "Does this transportation network admit a closed traversal that uses every road segment exactly once and returns to the start, for the existence of a closed edge-covering route, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 125,
+    "algorithm": "is_eulerian",
+    "task_type": "Path",
+    "question": "Does this transportation network admit a closed traversal that uses every road segment exactly once and returns to the start, checking whether every edge can be used exactly once in a round trip, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 126,
+    "algorithm": "is_eulerian",
+    "task_type": "Path",
+    "question": "Does this transaction network admit a closed traversal that uses every transfer record exactly once and returns to the start?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 127,
+    "algorithm": "capacity_scaling",
+    "task_type": "Flow & Cut",
+    "question": "In this costed, capacity-constrained transportation network, what flow plan satisfies supplies and demands at minimum total cost, while satisfying node demands and minimizing total transportation cost, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 128,
+    "algorithm": "capacity_scaling",
+    "task_type": "Flow & Cut",
+    "question": "In this costed, capacity-constrained transportation network, what flow plan satisfies supplies and demands at minimum total cost, for minimum-cost flow under supply and demand constraints, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 129,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, through the largest feasible flow under capacity limits, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 130,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, without exceeding link capacities anywhere, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 131,
+    "algorithm": "minimum_edge_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of routes whose removal would disconnect the graph or separate a specified source and target, by finding the minimum link failure set, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 132,
+    "algorithm": "minimum_edge_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of routes whose removal would disconnect the graph or separate a specified source and target, under the least number of route removals needed to disconnect it, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 133,
+    "algorithm": "minimum_node_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of locations whose removal disconnects a specified source from a specified target, using the smallest specific set of nodes whose removal disconnects the graph, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 134,
+    "algorithm": "minimum_node_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this transportation network, what is the smallest set of locations whose removal disconnects a specified source from a specified target, through the exact minimum node cut set, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 135,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, as maximum feasible throughput from source to sink, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 136,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, subject to edge capacities, for operational delivery planning, case 136?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 137,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when status depends on who points to whom, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 138,
+    "algorithm": "degree_centrality",
+    "task_type": "Centrality",
+    "question": "In this social network, which users are directly connected to the largest fraction of other users, when only direct reach is considered, for engagement and audience dynamics, case 138?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 139,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when importance is boosted by links from already important nodes, from a structural network perspective, case 139?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 140,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when influence flows recursively through prestigious neighbors, for engagement and audience dynamics, case 140?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 141,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed recommendation graph, which users have the highest influence when importance is passed recursively through incoming links from already important users, when importance is boosted by links from already important nodes, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 142,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed recommendation graph, which users have the highest influence when importance is passed recursively through incoming links from already important users, when influence flows recursively through prestigious neighbors, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 143,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed transaction network, which accounts have the highest influence when importance is passed recursively through incoming links from already important accounts, when importance is boosted by links from already important nodes, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 144,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, based on the overlap ratio of their neighbor sets, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 145,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, based on the overlap ratio of their neighbor sets, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 146,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, when uncommon common neighbors are more informative, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 147,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this biological interaction network, which currently unlinked pairs of proteins are most likely to connect based on shared neighbors that are themselves rare or low-degree?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 148,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this transaction network, which currently unlinked pairs of accounts are most likely to connect based on shared neighbors that are themselves rare or low-degree, giving extra weight to rare shared neighbors, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 149,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, using shared-neighbor overlap normalized by union size, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 150,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, when common contacts are scaled by total distinct contacts, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 151,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, using shared-neighbor overlap normalized by union size, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 152,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, when common contacts are scaled by total distinct contacts, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 153,
+    "algorithm": "preferential_attachment",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users are most likely to connect next because they already have large degree products?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 154,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, from a structural network perspective, case 154?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 155,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, when uncommon common neighbors are more informative, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 156,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, emphasizing low-degree mutual contacts, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 157,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 158,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this transaction network, which currently unlinked pairs of accounts are most likely to connect based on shared neighbors that are themselves rare or low-degree, when uncommon common neighbors are more informative, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 159,
+    "algorithm": "is_matching",
+    "task_type": "Matching & Coloring",
+    "question": "Does the proposed set of pairings in this social network form a valid matching with no user incident to more than one chosen edge?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 160,
+    "algorithm": "max_weight_matching",
+    "task_type": "Matching & Coloring",
+    "question": "In this weighted social network, what one-to-one pairing of users maximizes the total matching weight, to maximize the total pairing weight under one-to-one constraints, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 161,
+    "algorithm": "max_weight_matching",
+    "task_type": "Matching & Coloring",
+    "question": "In this weighted social network, what one-to-one pairing of users maximizes the total matching weight, as the highest-value set of disjoint pairs, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 162,
+    "algorithm": "max_weight_matching",
+    "task_type": "Matching & Coloring",
+    "question": "In this weighted social network, what one-to-one pairing of users maximizes the total matching weight, under a one-to-one assignment that maximizes total edge weight, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 163,
+    "algorithm": "capacity_scaling",
+    "task_type": "Flow & Cut",
+    "question": "In this costed, capacity-constrained transportation network, what flow plan satisfies supplies and demands at minimum total cost, when both feasibility and cost matter in the flow plan, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 164,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what is the average local triangle-closure level across all users, when summarized into one global cohesiveness score, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 165,
+    "algorithm": "average_clustering",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what is the average local triangle-closure level across all users, at the network level, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 166,
+    "algorithm": "degree_assortativity_coefficient",
+    "task_type": "Distance & Measures",
+    "question": "In this social network, do high-degree users tend to connect to other high-degree users, as measured by degree assortativity, by testing whether similarly connected nodes prefer each other, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 167,
+    "algorithm": "degree_assortativity_coefficient",
+    "task_type": "Distance & Measures",
+    "question": "In this social network, do high-degree users tend to connect to other high-degree users, as measured by degree assortativity, through degree-based mixing patterns, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 168,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, from a structural network perspective, case 168?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 169,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, for engagement and audience dynamics, case 169?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 170,
+    "algorithm": "cn_soundarajan_hopcroft",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users should be prioritized because they share common neighbors within the same community, when shared neighbors in the same community should count more, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 171,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, through neighbor-overlap similarity, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 172,
+    "algorithm": "k_clique_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, what overlapping communities can be formed by chaining together adjacent cliques of size k, using overlapping communities built from adjacent k-cliques, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 173,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 173?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 174,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this biological interaction network, how should the proteins be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 175,
+    "algorithm": "has_path",
+    "task_type": "Path",
+    "question": "In this social network, is there any path from a specified source user to a specified target user, through any existing route in the graph, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 176,
+    "algorithm": "has_path",
+    "task_type": "Path",
+    "question": "In this social network, is there any path from a specified source user to a specified target user, by simple reachability alone, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 177,
+    "algorithm": "has_path",
+    "task_type": "Path",
+    "question": "In this transportation network, is there any path from a specified source location to a specified target location?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 178,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for one chosen pair of nodes, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 179,
+    "algorithm": "has_path",
+    "task_type": "Path",
+    "question": "In this transaction network, is there any path from a specified source account to a specified target account, through any existing route in the graph, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 180,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this social network connected, meaning every user can reach every other user, as a single connected whole, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 181,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this social network connected, meaning every user can reach every other user, without any disconnected subgroup, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 182,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this social network connected, meaning every user can reach every other user, as one fully connected component, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 183,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this social network connected, meaning every user can reach every other user, with no isolated partition anywhere in the graph, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 184,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this social network connected, meaning every user can reach every other user, as a single connected whole, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 185,
+    "algorithm": "is_connected",
+    "task_type": "Connectivity & Components",
+    "question": "Is this transportation network connected, meaning every location can reach every other location?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 186,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, emphasizing low-degree mutual contacts, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 187,
+    "algorithm": "floyd_warshall",
+    "task_type": "Path",
+    "question": "In this social network, what are the shortest-path distances between every pair of users?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 188,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, for a single weighted source-target route query, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 189,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, when path cost, not hop count, determines the route, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 190,
+    "algorithm": "johnson",
+    "task_type": "Path",
+    "question": "In this sparse weighted transaction network, what are the shortest-path distances between every pair of accounts, even when some edge weights may be negative but no negative cycle exists?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 191,
+    "algorithm": "minimum_node_cut",
+    "task_type": "Connectivity & Components",
+    "question": "In this social network, what is the smallest set of users whose removal disconnects a specified source from a specified target?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 192,
+    "algorithm": "connected_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this undirected social network, what are the disconnected components of mutually reachable users, as disconnected reachability regions, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 193,
+    "algorithm": "cn_soundarajan_hopcroft",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users should be prioritized because they share common neighbors within the same community, using mutual contacts weighted by community agreement, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 194,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 195,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 196,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, through the largest feasible flow under capacity limits, for infrastructure and routing management, case 196?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 197,
+    "algorithm": "shortest_augmenting_path",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow from a specified source location to a specified target location when augmenting along shortest residual paths?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 198,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when endorsements from influential accounts matter most, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 199,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed social network, which users have the highest influence when importance is passed recursively through incoming links from already important users, when status depends on who points to whom, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 200,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed recommendation graph, which users have the highest influence when importance is passed recursively through incoming links from already important users, when endorsements from influential accounts matter most, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 201,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed recommendation graph, which users have the highest influence when importance is passed recursively through incoming links from already important users, when status depends on who points to whom, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 202,
+    "algorithm": "pagerank",
+    "task_type": "Centrality",
+    "question": "In this directed transaction network, which accounts have the highest influence when importance is passed recursively through incoming links from already important accounts, when influence flows recursively through prestigious neighbors, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 203,
+    "algorithm": "jaccard_coefficient",
+    "task_type": "Link Prediction",
+    "question": "In this social network, which currently unlinked pairs of users have the highest similarity based on the Jaccard overlap of their neighbor sets, based on the overlap ratio of their neighbor sets, from a structural network perspective, case 203?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 204,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as densely interacting groups, for engagement and audience dynamics, case 204?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 205,
+    "algorithm": "average_shortest_path_length",
+    "task_type": "Path",
+    "question": "In this social network, what is the average shortest-path distance over all pairs of reachable users?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 206,
+    "algorithm": "average_shortest_path_length",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the average shortest-path distance over all pairs of reachable locations, in this analysis, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 207,
+    "algorithm": "average_shortest_path_length",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the average shortest-path distance over all pairs of reachable locations, in this analysis, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 208,
+    "algorithm": "dijkstra_path_length",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum total path cost from a specified source location to a specified target location?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 209,
+    "algorithm": "capacity_scaling",
+    "task_type": "Flow & Cut",
+    "question": "In this costed, capacity-constrained transportation network, what flow plan satisfies supplies and demands at minimum total cost, under cost-aware flow optimization with capacities and demands, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 210,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transaction network, what is the shortest path between a specified source account and target account, between a specified source and target, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 211,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, under weighted shortest-route planning from a given depot, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 212,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, from one chosen source with weighted route costs, for operational delivery planning, case 212?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 213,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transaction network, what is the minimum-total-cost path from a specified source account to a specified target account?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 214,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for a particular origin-destination pair, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 215,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for one source-target query, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 216,
+    "algorithm": "dijkstra_path_length",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transaction network, what is the minimum total path cost from a specified source account to a specified target account?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 217,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, for one source-target query, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 218,
+    "algorithm": "floyd_warshall",
+    "task_type": "Path",
+    "question": "In this transportation network, what are the shortest-path distances between every pair of locations, for all-origin all-destination planning, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 219,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, between a specified source and target, for operational delivery planning, case 219?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 220,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, between a specified source and target, from a structural network perspective, case 220?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 221,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, for one chosen pair of nodes, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 222,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for one chosen pair of nodes, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 223,
+    "algorithm": "dijkstra_path",
+    "task_type": "Path",
+    "question": "In this nonnegative weighted transportation network, what is the minimum-total-cost path from a specified source location to a specified target location, for a single weighted source-target route query, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 224,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transaction network, what is the shortest path between a specified source account and target account, for one chosen pair of nodes, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 225,
+    "algorithm": "connected_components",
+    "task_type": "Connectivity & Components",
+    "question": "In this undirected social network, what are the disconnected components of mutually reachable users, as maximal mutually reachable pieces, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 226,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for a particular origin-destination pair, for infrastructure and routing management, case 226?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 227,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, by maximizing within-group density over between-group links, from a structural network perspective, case 227?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 228,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, for engagement and audience dynamics, case 228?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 229,
+    "algorithm": "node_connectivity",
+    "task_type": "Connectivity & Components",
+    "question": "In this social network, what is the minimum number of users that must be removed to disconnect the graph or separate two parts?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 230,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, without exceeding link capacities anywhere, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 231,
+    "algorithm": "edmonds_karp",
+    "task_type": "Flow & Cut",
+    "question": "In this capacity-constrained transportation network, what is the maximum flow that can be sent from a specified source location to a specified target location, as maximum feasible throughput from source to sink, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 232,
+    "algorithm": "minimum_spanning_tree",
+    "task_type": "Tree & Spanning Tree",
+    "question": "In this weighted transportation network, what spanning tree connects all locations with the minimum possible total edge weight, in this analysis, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 233,
+    "algorithm": "random_spanning_tree",
+    "task_type": "Tree & Spanning Tree",
+    "question": "In this connected transportation network, generate one spanning tree sampled randomly from the graph's spanning trees.",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 234,
+    "algorithm": "minimum_spanning_tree",
+    "task_type": "Tree & Spanning Tree",
+    "question": "In this weighted transportation network, what spanning tree connects all locations with the minimum possible total edge weight, in this analysis, for operational delivery planning, case 234?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 235,
+    "algorithm": "wiener_index",
+    "task_type": "Distance & Measures",
+    "question": "In this transportation network, what is the total sum of shortest-path distances over all unordered pairs of locations, in this analysis, for infrastructure and routing management?",
+    "domain": "Transportation",
+    "role": "Traffic Engineer"
+  },
+  {
+    "id": 236,
+    "algorithm": "wiener_index",
+    "task_type": "Distance & Measures",
+    "question": "In this transportation network, what is the total sum of shortest-path distances over all unordered pairs of locations, in this analysis, for operational delivery planning?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 237,
+    "algorithm": "wiener_index",
+    "task_type": "Distance & Measures",
+    "question": "In this biological interaction network, what is the total sum of shortest-path distances over all unordered pairs of proteins?",
+    "domain": "Medicine",
+    "role": "Computational Biologist"
+  },
+  {
+    "id": 238,
+    "algorithm": "get_node_attributes",
+    "task_type": "Graph Query",
+    "question": "In this social network, what are the stored attributes associated with each specified user, in this analysis, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 239,
+    "algorithm": "get_node_attributes",
+    "task_type": "Graph Query",
+    "question": "In this social network, what are the stored attributes associated with each specified user, in this analysis, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 240,
+    "algorithm": "k_hop_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this social network, which users lie exactly k hops away from a specified source user, in this analysis, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 241,
+    "algorithm": "k_hop_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this social network, which users lie exactly k hops away from a specified source user, in this analysis, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 242,
+    "algorithm": "adamic_adar_index",
+    "task_type": "Link Prediction",
+    "question": "In this recommendation graph, which currently unlinked pairs of users are most likely to connect based on shared neighbors that are themselves rare or low-degree, by rewarding shared neighbors that are not broadly connected, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 243,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this recommendation graph, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as modular clusters with stronger internal than external ties, for segmentation and targeting analysis, case 243?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 244,
+    "algorithm": "common_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this social network, which pairs of users share the largest number of common neighbors, in this analysis, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 245,
+    "algorithm": "common_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this social network, which pairs of users share the largest number of common neighbors, in this analysis, for engagement and audience dynamics?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 246,
+    "algorithm": "common_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this recommendation graph, which pairs of users share the largest number of common neighbors, in this analysis, for recommendation design?",
+    "domain": "Recommendation System",
+    "role": "Recommendation Systems Architect"
+  },
+  {
+    "id": 247,
+    "algorithm": "common_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this recommendation graph, which pairs of users share the largest number of common neighbors, in this analysis, for segmentation and targeting analysis?",
+    "domain": "Recommendation System",
+    "role": "Data Scientist - Marketing Analytics"
+  },
+  {
+    "id": 248,
+    "algorithm": "common_neighbors",
+    "task_type": "Graph Query",
+    "question": "In this transaction network, which pairs of accounts share the largest number of common neighbors?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 249,
+    "algorithm": "extract_subgraph",
+    "task_type": "Graph Query",
+    "question": "From this social network, extract the induced subgraph formed by a specified subset of users.",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 250,
+    "algorithm": "greedy_modularity_communities",
+    "task_type": "Clustering & Community",
+    "question": "In this social network, how should the users be partitioned into non-overlapping communities so that within-community connectivity is high and within-group density is favored over between-group density, as internally dense but externally sparse communities, for engagement and audience dynamics, case 250?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 251,
+    "algorithm": "has_path",
+    "task_type": "Path",
+    "question": "In this transaction network, is there any path from a specified source account to a specified target account, by simple reachability alone, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 252,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this social network, what is the shortest path between a specified source user and target user, for a particular origin-destination pair, from a structural network perspective?",
+    "domain": "Social Network",
+    "role": "Social Network Analyst"
+  },
+  {
+    "id": 253,
+    "algorithm": "bfs_tree",
+    "task_type": "Basics",
+    "question": "From a specified source user in this social network, what breadth-first search tree is obtained by exploring layer by layer?",
+    "domain": "Social Network",
+    "role": "Social Media Analyst"
+  },
+  {
+    "id": 254,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transportation network, what is the shortest path between a specified source location and target location, for one source-target query, for operational delivery planning, case 254?",
+    "domain": "Transportation",
+    "role": "Logistics Operations Analyst"
+  },
+  {
+    "id": 255,
+    "algorithm": "shortest_path",
+    "task_type": "Path",
+    "question": "In this transaction network, what is the shortest path between a specified source account and target account, for a particular origin-destination pair, for suspicious-relationship investigation?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  },
+  {
+    "id": 256,
+    "algorithm": "find_cycle",
+    "task_type": "Path",
+    "question": "In this transaction network, can we find an explicit cycle, that is, a closed walk returning to its starting account?",
+    "domain": "Finance",
+    "role": "Anti-Money Laundering (AML) Analyst"
+  }
+]
