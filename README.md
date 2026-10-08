@@ -20,7 +20,6 @@
   <a href="#-contact-us"><img src="https://img.shields.io/badge/📞-Contact_Us-green.svg" alt="Contact"></a>
 </p>
 
-English
 
 </div>
 
