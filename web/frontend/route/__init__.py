@@ -43,12 +43,16 @@ def create_app():
     from .routes_documents import bp as documents_bp
     from .routes_manage_dataset import bp as manage_bp
     from .routes_models import bp as models_bp
+    from .routes_algorithms_view import bp as algorithms_view_bp
+    from .routes_feedback import bp as feedback_bp
 
     app.register_blueprint(pages_bp)
     app.register_blueprint(health_bp)
     app.register_blueprint(documents_bp)
     app.register_blueprint(manage_bp)
     app.register_blueprint(models_bp)
+    app.register_blueprint(algorithms_view_bp)
+    app.register_blueprint(feedback_bp)
 
     # ====== Initialize SocketIO and async runtime ======
     socketio.init_app(app)

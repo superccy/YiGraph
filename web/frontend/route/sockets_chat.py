@@ -3,14 +3,26 @@ import os
 import re
 import logging
 import asyncio
+import threading
+from flask import request
 from flask_socketio import emit
 from . import socketio
 # Add project path to import AAG services
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 from aag.api.async_runtime import get_background_loop, get_chat_service
+from aag.api.services.chat_service import CHAT_FRIENDLY_ERROR_MSG
+from .intent_clarification import intent_gate, ClarificationError
 
 
 logger = logging.getLogger(__name__)
+
+# The paper engine owns a shared dataset and DAG; do not interleave Web requests.
+_request_lock = threading.Lock()
+
+
+@socketio.on('disconnect')
+def clear_clarification_state(reason=None):
+    intent_gate.clear_client(request.sid)
 
 
 def split_into_sentences(text: str, max_len: int = 80):
@@ -165,6 +177,7 @@ def smart_split_markdown(text: str, max_len: int = 80):
 @socketio.on('chat_request')
 def handle_chat_request(data):
     """WebSocket chat handler: receive user message, push streaming results."""
+    client_sid = request.sid
     # 1. Parse parameters
     try:
         user_message = str(data.get("message") or "").strip()
@@ -178,6 +191,9 @@ def handle_chat_request(data):
         _dtype = data.get("dataset_type") or data.get("file_type")
         dataset_type = str(_dtype).strip() if _dtype else None  # "text" | "graph" | None
         custom_mode = data.get("mode")
+        conversation_id = str(data.get("conversation_id") or "default")
+        clarification_id = str(data.get("clarification_id") or "")
+        owner = (client_sid, conversation_id)
     except Exception as e:
         logger.error(f"Failed to parse parameters: {e}")
         emit('chat_response', {"error": "Invalid request format. Please check parameters."})
@@ -192,14 +208,23 @@ def handle_chat_request(data):
         emit('chat_response', {"error": "Dataset is empty. Please specify a dataset first."})
         return
 
+    if not _request_lock.acquire(blocking=False):
+        emit('chat_response', {'error': '已有分析正在处理，请稍后重试。 / An analysis is already being processed.'})
+        emit('chat_response', {'type': 'stream_end'})
+        return
+
     try:
         chat_service = get_chat_service()
         loop = get_background_loop()
 
+        effective_context = {}
+
         # Callback to send streaming data (called from background event loop thread)
         def send_response(data_chunk):
             """Send response data to frontend."""
-            socketio.emit('chat_response', data_chunk)
+            if data_chunk.get('contentType') == 'dag':
+                intent_gate.record_plan(owner, dag_id, effective_context)
+            socketio.emit('chat_response', data_chunk, to=client_sid)
 
         # Determine mode
         if custom_mode == "interact":
@@ -209,11 +234,30 @@ def handle_chat_request(data):
         logger.info(f"WS request: model={selected_model}, dataset={dataset}, message={user_message[:20]}..., expertMode={expert_mode}, mode={mode}")
         print(f"WS request: model={selected_model}, dataset={dataset}, message={user_message[:20]}..., expertMode={expert_mode}, mode={mode}")
 
+        requested_context = {"model": selected_model, "dataset": dataset,
+                             "dataset_type": dataset_type, "mode": mode, "expert_mode": expert_mode}
+
         async def process_request():
             try:
+                following_plan = dag_confirm == "yes" or is_dag_modification or (dag_confirm == "no" and modifications)
+                if following_plan:
+                    effective_context.update(intent_gate.require_plan(owner, dag_id))
+                else:
+                    engine = chat_service.engine_service.get_engine()
+                    prepared = await intent_gate.prepare(owner, user_message, requested_context, engine, clarification_id)
+                    effective_context.update(prepared.context)
+                    if prepared.clarification:
+                        send_response({'type': 'result', 'contentType': 'clarification', 'content': prepared.clarification})
+                        send_response({'type': 'stream_end'})
+                        return
+                    send_response({'type': 'result', 'contentType': 'intent_ready'})
+                    intent_gate.begin_analysis()
+
+                analysis_dataset = effective_context["dataset"]
+                analysis_dataset_type = effective_context.get("dataset_type")
                 if dag_confirm == "yes":
                     engine = chat_service.engine_service.get_engine()
-                    engine.specific_dataset(dataset, dataset_type)
+                    engine.specific_dataset(analysis_dataset, analysis_dataset_type)
                     logger.info("DAG confirmed, starting expert mode analysis")
                     result = await chat_service.start_expert_analysis()
 
@@ -236,7 +280,7 @@ def handle_chat_request(data):
 
                 if is_dag_modification or (dag_confirm == "no" and modifications):
                     engine = chat_service.engine_service.get_engine()
-                    engine.specific_dataset(dataset, dataset_type)
+                    engine.specific_dataset(analysis_dataset, analysis_dataset_type)
                     modification_request = modifications or user_message
                     logger.info(f"DAG modification request received: {modification_request}")
 
@@ -259,14 +303,18 @@ def handle_chat_request(data):
                 # Normal chat request — streaming (stream_end is sent internally)
                 logger.info(f"Processing normal chat request, mode={mode}")
                 await chat_service.process_streaming_chat(
-                    message=user_message,
-                    model=selected_model,
-                    dataset=dataset,
-                    dataset_type=dataset_type,
-                    mode=mode,
-                    expert_mode=expert_mode,
+                    message=prepared.query,
+                    model=effective_context["model"],
+                    dataset=analysis_dataset,
+                    dataset_type=analysis_dataset_type,
+                    mode=effective_context["mode"],
+                    expert_mode=effective_context["expert_mode"],
                     callback=send_response
                 )
+            except ClarificationError as exc:
+                logger.warning("Intent gate stopped the request: %s", exc)
+                send_response({'error': str(exc), 'restart_required': exc.restart_required})
+                send_response({'type': 'stream_end'})
             except Exception as exc:
                 logger.error(f"Background processing failed: {exc}", exc_info=True)
                 send_response({'type': 'result', 'contentType': 'text', 'content': CHAT_FRIENDLY_ERROR_MSG})
@@ -282,3 +330,6 @@ def handle_chat_request(data):
         logger.error(error_msg, exc_info=True)
         emit('chat_response', {'type': 'result', 'contentType': 'text', 'content': CHAT_FRIENDLY_ERROR_MSG})
         emit('chat_response', {'type': 'stream_end'})
+
+    finally:
+        _request_lock.release()
