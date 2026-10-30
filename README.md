@@ -405,6 +405,35 @@ Baseline reports `algorithm_accuracy`. Hierarchical reports both `task_type_accu
 
 ---
 
+## Reproducibility Details
+
+This section documents the origin and curation of the experience knowledge base and the evaluation protocol for Report Quality.
+
+- [Origin and Curation of the Experience Knowledge Base](#1-origin-and-curation-of-the-experience-knowledge-base)
+- [Evaluation Protocol for Report Quality](#2-evaluation-protocol-for-report-quality)
+
+### 1. Origin and Curation of the Experience Knowledge Base
+
+The Experience Knowledge Base provides the LLM with historical successful recovery cases to support more accurate recovery strategy generation. Its initial data come from the 700 failed workflows in the fault-recovery dataset constructed for R-GCN training and evaluation. These workflows failed during actual YiGraph execution and were successfully recovered through configuration correction and re-execution. Therefore, they contain real failure contexts, error sources, and successful recovery strategies that can be reused as historical recovery experience.
+
+For each workflow, we create a structured entry containing the failed-node context, annotated error-source-node contexts, their dependency paths to the failed node, exception types, and successful repair strategies. Each node context includes the subproblem, selected graph algorithm, error message, algorithm configuration, filtering code, and execution result. The 700 failed workflows are organized into 700 structured entries, forming the initial Experience Knowledge Base.
+
+### 2. Evaluation Protocol for Report Quality
+
+Report Quality is evaluated using a rubric-guided LLM-as-a-judge framework rather than a human user study or a deterministic heuristic. For each question, the judge receives an anonymous report, a ground-truth DAG, and explicit rubrics for three dimensions. Each DAG node records the ground-truth subproblem, algorithm, and result, while each edge records a dependency and its type.
+
+The judge LLM first aligns the analysis steps in the report with the nodes in the ground-truth DAG and then performs binary assessments according to the following rules:
+
+| Metric | Scoring rule | Final score |
+| --- | --- | --- |
+| **Structural completeness** | A ground-truth node receives a score of 1 only if the report explicitly presents its subproblem, algorithm, and result; otherwise, it receives 0. | The final score is computed as the number of covered ground-truth nodes divided by the total number of ground-truth nodes. |
+| **Logical coherence** | A ground-truth dependency receives a score of 1 only if both the dependency and its type are correctly reflected in the report; otherwise, it receives 0. | The final score is computed as the number of correctly represented dependencies divided by the total number of dependencies in the ground-truth DAG. |
+| **Interpretability** | An analysis step receives a score of 1 only if its result is correct and provides valid support for the corresponding conclusion; otherwise, it receives 0. | The final score is computed as the number of correct and well-supported analysis steps divided by the total number of analysis steps in the report. |
+
+We use GPT-5.4-mini as the judge LLM with the temperature set to 0. Each report is evaluated in three independent runs, and the run-level scores for each metric are averaged.
+
+---
+
 ### Acknowledgments
 
 This project benefits from the following open source projects:
